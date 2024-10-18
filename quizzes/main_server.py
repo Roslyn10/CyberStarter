@@ -34,7 +34,7 @@ async def quiz_server(websocket, path):
 
 # Initialises the server that the website will run on
 async def main():
-    async with websockets.serv(quiz_server, "localhost", 1234):
+    async with websockets.serve(quiz_server, "localhost", 1234):
         print("Server started at ws://localhost: 1234")
         await asyncio.Future() # Ensures  that the server can be run forever
 

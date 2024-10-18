@@ -21,7 +21,7 @@ async def quiz_client():
                 question = json.loads(question_data)
 
                 if "score" in question:
-                    print(f"Your score: {question['score'] out of {question['total']}")
+                    print(f"Your score: {question['score']} out of {question['total']}")
                     break  # Exits the loop after displaying the score
 
                 print(question["question"])
@@ -32,9 +32,9 @@ async def quiz_client():
                     answer = input("Your answer: ")
                     await websocket.send(answer)
 
-                except json.JSONDecodeError:
-                    print("Error: Could not decode the message from the server")
-                    break
+            except json.JSONDecodeError:
+                print("Error: Could not decode the message from the server")
+                break
 
-if __name__ == "__maine__":
+if __name__ == "__main__":
     asyncio.run(quiz_client())

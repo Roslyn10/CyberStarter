@@ -14,7 +14,7 @@ quiz_questions = [
             
         },
         {
-        "quesion": "Which one is not one of the different types of internt connections?"
+        "quesion": "Which one is not one of the different types of internt connections?",
         "options": ["Dial-up", "DSL", "Cable", "Fiber", "Cellulatr"],
         "answer": "DSL"
         },
