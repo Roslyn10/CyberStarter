@@ -4,7 +4,7 @@
 import asyncio
 import websockets
 import json
-from Introducation_quiz import quiz_questions
+from Introduction_quiz import quiz_questions
 
 async def quiz_server(websocket, path):
     """
@@ -28,15 +28,15 @@ async def quiz_server(websocket, path):
             score += 1
 
     # Sends the score to the student
-    await websocket.send(json.dumps({"score": score, "total": len(quiz_questions}))
+    await websocket.send(json.dumps({"score": score, "total": len(quiz_questions)}))
     await websocket.close()
 
 
 # Initialises the server that the website will run on
 async def main():
     async with websockets.serv(quiz_server, "localhost", 1234):
-    print("Server started at ws://localhost: 1234")
-    await asyncio.Future() # Ensures  that the server can be run forever
+        print("Server started at ws://localhost: 1234")
+        await asyncio.Future() # Ensures  that the server can be run forever
 
 if __name__ == "__main__":
     try:
