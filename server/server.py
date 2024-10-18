@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""An example of the server using websocket
+"""An example of the server using websocket"""
 
 import asyncio
 import websockets
