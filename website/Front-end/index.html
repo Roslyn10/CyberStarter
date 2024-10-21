@@ -1,32 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title>CyberStarter</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <style>
-        img {
-            border-radius: 50%;
-        }
-    </style>
-    <body>
-        <header>
-            <h1>CyberStarter</h1>
-            <nav>
-                <ul>
-                    <li><a  href="#Modules">Modules</a></li>
-                    <li><a href="#Quizzes">Quizzes</a></li>
-                    <li><a href="#Back">Home</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Safety Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">EduSafety</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Quiz</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#">Login</a> | <a href="#">Sign Up</a>
+        </div>
+    </header>
 
-        <section id="home">
-            <div class="container">
-                <h1>Modulde</h1>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Stay Safe Online: Learn Internet Safety</h1>
+        <button class="cta-button">Start Learning</button>
+    </section>
+
+    <!-- Featured Modules Section -->
+    <section class="featured-modules">
+        <h2>Featured Modules</h2>
+        <div class="modules-container">
+            <div class="module-card">
+                <h3>Internet Basics</h3>
+                <p>Learn the essentials of using the internet safely.</p>
+                <a href="#" class="start-button">Start</a>
             </div>
-        </section>
-    </body>
+            <div class="module-card">
+                <h3>Social Media Safety</h3>
+                <p>Understand how to stay safe while using social media.</p>
+                <a href="#" class="start-button">Start</a>
+            </div>
+            <div class="module-card">
+                <h3>Phishing & Scams</h3>
+                <p>Identify and avoid common online scams.</p>
+                <a href="#" class="start-button">Start</a>
+            </div>
+            <div class="module-card">
+                <h3>Privacy Settings</h3>
+                <p>Learn how to protect your personal information online.</p>
+                <a href="#" class="start-button">Start</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses">
+        <h2>Our Courses</h2>
+        <div class="courses-grid">
+            <div class="course-item">
+                <h3>Kids Safety</h3>
+                <p>A guide to keeping children safe online.</p>
+                <a href="#" class="start-button">Start Course</a>
+            </div>
+            <!-- Add more courses as needed -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Help Center</a>
+            </div>
+            <div class="contact-info">
+                <p>Email: support@edusafety.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="newsletter">
+                <form>
+                    <label for="email">Subscribe to our Newsletter:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
