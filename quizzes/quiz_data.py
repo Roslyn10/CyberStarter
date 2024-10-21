@@ -3,7 +3,7 @@
 quiz_questions = [
     {
         "question": "What is the capital of France?",
-        "options": ["Berlin", "Madrid", "Paris", "Rome"],
+        "options": ["Berlin"," Madrid"," Paris", "Rome"],
         "answer": "3"
     },
     {

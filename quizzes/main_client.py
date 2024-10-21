@@ -9,14 +9,14 @@ import json
 
 async def quiz_client():
     """
-    The main clinet server
+    The main client server
     """
 
     async with websockets.connect("ws://localhost:1234") as websocket:
         while True:
             question_data = await websocket.recv()
 
-            # Atempts to parse the received data as JSON
+            # Attempts to parse the received data as JSON
             try:
                 question = json.loads(question_data)
 
@@ -28,9 +28,14 @@ async def quiz_client():
                 for idx, option in enumerate(question["options"], start=1):
                     print(f"{idx}. {option}")
 
-                    # Gets the students answer
-                    answer = input("Your answer: ")
-                    await websocket.send(answer)
+                # Gets the student's answer after displaying all options
+                while True:
+                    answer = input("Your answer (number): ")
+                    if answer.isdigit() and 1 <= int(answer) <= len(question["options"]):
+                        await websocket.send(answer)
+                        break  # Exit the input loop if valid input
+                    else:
+                        print("Please enter a valid option number.")
 
             except json.JSONDecodeError:
                 print("Error: Could not decode the message from the server")

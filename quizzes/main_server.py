@@ -4,7 +4,7 @@
 import asyncio
 import websockets
 import json
-from Introduction_quiz import quiz_questions
+from quiz_data import quiz_questions
 
 async def quiz_server(websocket, path):
     """
