@@ -11,8 +11,8 @@
             <div class="form-box">
                 <div class="button-box">
                     <div id="btn"></div>
-                    <button type="button" class="toggle-btn">Log In</button>
-                    <button type="button" class="toggle-btn">Sign Up</button>
+                    <button type="button" class="toggle-btn" onclick="login()" >Log In</button>
+                    <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
                 </div>
                 <form id="login" class="input-group">
                     <input type="text" class="input-field" placeholder="User name" required>
@@ -29,5 +29,16 @@
                     <button type="submit" class="submit-btn">Sign up</button>
                 </form>
         </div>
+        <script>
+            var c = document.getElementById("login");
+            var y = document.getElementById("signup");
+            var b = document.getElementById("btn");
+
+            function signup(){
+                c.style.left = "-400px";
+                y.style.left = "50px";
+                b.style.left = "110px";
+            }
+        </script>
     </body>
 </html>
