@@ -11,33 +11,39 @@
             <div class="form-box">
                 <div class="button-box">
                     <div id="btn"></div>
-                    <button type="button" class="toggle-btn" onclick="login()" >Log In</button>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
                     <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
                 </div>
                 <form id="login" class="input-group">
                     <input type="text" class="input-field" placeholder="User name" required>
-                    <input type="text" class="input-field" placeholder="Password" required>
-                    <input type="checkbox" class="check=box"><span>Remember Password</span>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <input type="checkbox" class="checkbox"><span>Remember Password</span>
                     <button type="submit" class="submit-btn">Log In</button>
                 </form>
-                </div>
-                <form id="Sign up" class="input-group">
+                <form id="signup" class="input-group">
                     <input type="text" class="input-field" placeholder="User name" required>
-                    <input type="text" class="input-field" placeholder="Password" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
                     <input type="email" class="input-field" placeholder="Email" required>
-                    <input type="checkbox" class="check=box"><span>Remember Password</span>
-                    <button type="submit" class="submit-btn">Sign up</button>
+                    <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Sign Up</button>
                 </form>
+            </div>
         </div>
         <script>
-            var c = document.getElementById("login");
-            var y = document.getElementById("signup");
-            var b = document.getElementById("btn");
+            var loginForm = document.getElementById("login");
+            var signupForm = document.getElementById("signup");
+            var btn = document.getElementById("btn");
 
             function signup(){
-                c.style.left = "-400px";
-                y.style.left = "50px";
-                b.style.left = "110px";
+                loginForm.style.left = "-400px";
+                signupForm.style.left = "50px";
+                btn.style.left = "110px";
+            }
+
+            function login(){
+                loginForm.style.left = "50px";
+                signupForm.style.left = "450px";
+                btn.style.left = "0px";
             }
         </script>
     </body>
