@@ -31,5 +31,25 @@ quiz_question = [
         "options": ["Data breaches", "Malware and viruses", "Romance scams", "Phishing emails"],
         "answer": "3"
     },
+    {
+        "question": "What can you do to protect your personal infromation online?",
+        "options": ["Share your password with trusted friennds", "Always log out of shared device", "Use the same password across all acounts"],
+        "answer": "2"
+    },
+    {
+        "question": "Why is it important to keep antivirus software up to date?", 
+        "options": ["To make your computer faster", "To protect against new threats", "To imporove your internet connection speed", "To access blocked websites"],
+        "answer": "2"
+    },
+    {
+        "question": "What should you do if you encounter a suspicous website?",
+        "options": ["Report it to your ISP", "Share it with friedns", "Try to log in to see what happens"," Bookmark it for later"]
+        "answer": "1"
+    },
+    {
+        "question": "What is a good protector when using public Wi-Fi?",
+        "options": ["Download apps without checking the source", "Ignore security warnings", "Use secure networks for sensitive information", "Always connect wthout a VPN"],
+        "answer": "3"
+    }
 
 ]
