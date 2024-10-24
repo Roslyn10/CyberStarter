@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background: #C1121F;
+    background: #780000;
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 .cta-button {
-    background-color: #007bff;
+    background-color: #C1121F;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -141,6 +141,3 @@ footer {
 .contact-info p {
     margin-bottom: 10px;
 }
-
-
-
