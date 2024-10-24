@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 .hero {
-    background: url('Login-img.jpg') no-repeat center center/cover;
+    background: url('index-banner.jpg') no-repeat center center/cover;
     color: #fff;
     height: 300px;
     display: flex;
