@@ -33,22 +33,4 @@ quiz_questions = [
                 },
             {
                 "question": "Which of the following best describes dial-up internet?",
-                "options": [" An internet service that connects through cable TV", "A wireless connection that does not use any cables", "A high-speed connection using fiber optics", "An older, slower connection that uses phone lines"]
-                "answer": "4"
-                },
-            {
-                "question": "Which does the domain Name System (DNS) do?",
-                "options": ["Manages email services for users", "Translates website addresses into IP addresses", "Provides internet security features", "Stores website data for fast access"]
-                "answers": "2"
-                },
-            {
-                "question": "How does data travel across the internt?",
-                "options": ["Only via wireless connections", "Thorugh physical devices only", "In packets that are reassemebled at the destination", "As a continuous stream without interruption"],
-                "answer": "3"
-                },
-            {
-                "question": "What is the Transmission Control Protocol (TCP)?"
-                "options": ["A set of rules for ensuring smooth data transmission", "A type of internet connection method", "A way to encrypt user data", "A program for managing web servers"],
-                "answer": "1"
-                },
-]
+                "options": ["
