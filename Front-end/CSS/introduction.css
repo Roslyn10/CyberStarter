@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 .hero {
-    background: url('Login-img.jpg') no-repeat center center/cover;
+    background: url('../images/index-banner.jpg') no-repeat center center/cover;
     color: #fff;
     height: 300px;
     display: flex;
@@ -161,7 +161,7 @@ nav ul li a {
 }
 
 .start-button {
-    background-color: #28a745;
+    background-color: #669BBC;
     color: white;
     padding: 10px;
     text-decoration: none;
