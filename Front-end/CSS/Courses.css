@@ -41,6 +41,26 @@ nav ul li a {
     text-decoration: none;
 }
 
+.hero {
+    background: url('../images/index-banner.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
 .course-container {
     position: relative;
     margin: 20px;
@@ -48,6 +68,7 @@ nav ul li a {
     background-color: #f5f5f5; 
     border: 1px solid #ccc;
 }
+
 .coming-soon-banner {
     position: absolute;
     top: 10px; 
