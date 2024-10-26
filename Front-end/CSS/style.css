@@ -106,6 +106,7 @@ nav ul li a {
 .courses-grid {
     display: flex;
     justify-content: space-around;
+    position: relative; /* Ensure relative positioning for the banner */
 }
 
 .course-item {
@@ -114,6 +115,24 @@ nav ul li a {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 200px;
+    position: relative; /* For absolute positioning of the banner */
+}
+
+.coming-soon-banner {
+    position: absolute;
+    top: -20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #C1121F; /* Your primary color */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 10; /* Ensure it appears above other content */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 150px; /* Adjust width as needed */
+    margin-top: 10px; /* Adjust to create space above */
 }
 
 footer {
