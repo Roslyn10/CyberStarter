@@ -7,42 +7,37 @@ quiz_questions = [
         "answer": "3"
     },
     {
-        "quesiton": "What should you do if you recieve an eamil with a suspicious attachment?",
+        "question": "What should you do if you receive an email with a suspicious attachment?",
         "options": ["Open it immediately", "Download it to check what's inside", "Delete the email and report it as spam", "Forward it to a friend to check"],
         "answer": "3"
     },
     {
         "question": "What is phishing?",
-        "options": ["Using an email to trick someone into giving personal information", "Sending emails to friends", "Typing too fast", "Creating an email signiture"], 
+        "options": ["Using an email to trick someone into giving personal information", "Sending emails to friends", "Typing too fast", "Creating an email signature"], 
         "answer": "1"
     },
     {
-        "question": "Which of the following is a good pratcie when compsoing professinal emails?",
+        "question": "Which of the following is a good practice when composing professional emails?",
         "options": ["Using emojis in the subject line", "Writing in all caps", "Including a clear subject line with the action required", "Using your nickname in the email address"],
         "answer": "3"
     },
     {
-        "question": "Which of the following is a good practive when composing a professional email?",
-        "options": ["Using emojis in the subject line", "Writing in all caps", "Including a clear subject line with the action required", "Using your nickname in the email address"],
-        "answer": "3"
-    },
-    {
-        "question": "Why is it important to update your antivirus software reguarly?", 
-        "options": ["It helps organise your emails better", "It protects your device from new security threats", "It helps you type faster", "It makes emails look more professional"],
+        "question": "Why is it important to update your antivirus software regularly?", 
+        "options": ["It helps organize your emails better", "It protects your device from new security threats", "It helps you type faster", "It makes emails look more professional"],
         "answer": "2"
     },
     {
-        "question":  "What should you always do after using a shared computer to check your email?",
-        "options": ["Stay logged in for convience", "Log out and clear browser data", "Leave the broswer open", "Bookmark your email page for the next time"], 
+        "question": "What should you always do after using a shared computer to check your email?",
+        "options": ["Stay logged in for convenience", "Log out and clear browser data", "Leave the browser open", "Bookmark your email page for the next time"], 
         "answer": "2"
     },
     {
-        "question": "What does the "reply all" feature do in an email?",
-        "options": ["It sends your reply to the person who emailed you", "It dens your reply to everyone included in the email thread", "It forwards the email to everyone on your contact list", "It deleted the original email"],
-        "answer": "3",
+        "question": "What does the 'reply all' feature do in an email?",
+        "options": ["It sends your reply to the person who emailed you", "It sends your reply to everyone included in the email thread", "It forwards the email to everyone on your contact list", "It deletes the original email"],
+        "answer": "2"
     },
     {
-        "question": "When composing an email at work, wha should you do first?",
+        "question": "When composing an email at work, what should you do first?",
         "options": ["Add your signature", "Write the email body", "Clarify the purpose and subject line", "Attach a funny meme"],
         "answer": "3"
     },
@@ -52,7 +47,8 @@ quiz_questions = [
         "answer": "2" 
     },
     {
-        "question": "Which of the following is a example of goodemail etiquette?",
-        "options": ["Forwarding a chain email to your boss", "Using a clear subject line and proper grammer", "Sending large attachments without warning", "Using informal langauge with a client"]
+        "question": "Which of the following is an example of good email etiquette?",
+        "options": ["Forwarding a chain email to your boss", "Using a clear subject line and proper grammar", "Sending large attachments without warning", "Using informal language with a client"],
+        "answer": "2"
     }
 ]
