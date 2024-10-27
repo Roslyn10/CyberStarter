@@ -77,21 +77,6 @@ footer {
 }
 
 /* Contact Section */
-.contact-section {
-    padding: 40px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.contact-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.contact-section p {
-    margin-bottom: 20px;
-}
-
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -101,20 +86,21 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
+.form-row {
+    display: flex;
+    align-items: center;
     margin-bottom: 15px;
-    text-align: left;
 }
 
-.form-group label {
-    display: block;
+.form-row label {
+    width: 100px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-right: 10px;
 }
 
-.form-group input, 
-.form-group textarea {
-    width: 100%;
+.form-row input, 
+.form-row textarea {
+    flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -122,10 +108,10 @@ footer {
 }
 
 .submit-button {
-    background-color: #C1121F;
-    color: #fff;
     padding: 10px 20px;
     font-size: 1em;
+    background-color: #C1121F;
+    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -133,21 +119,4 @@ footer {
 
 .submit-button:hover {
     background-color: #780000;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.quick-links a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.contact-info p {
-    margin-bottom: 10px;
 }
