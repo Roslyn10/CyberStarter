@@ -9,7 +9,7 @@ quiz_questions = [
             "https://www.example.com/shop/clothes/women?category=dresses&sort=price-asc#summer-collection",
             "http://www.freeiphonedeals.com/win?prize=iphone&entry=1234"
         ],
-        "answer": "3"
+        "answer":  "https://www.example.com/shop/clothes/women?category=dresses&sort=price-asc#summer-collection"
     },
     {
         "question": "Look at this URL and label the different sections: https://www.example.com/shop/clothes/women?category=dresses&sort=price-asc#summer-collection",
@@ -24,7 +24,7 @@ quiz_questions = [
             "Whaling, Spear Phishing, Vishing, and Smishing",
             "Whisper Phishing, Splicing, Spcing and Squishing"
         ],
-        "answer": "3"
+        "answer": "Whaling, Spear Phishing, Vishing, and Smishing"
     },
     {
         "question": "Which of the following characteristics suggest that a website may be harmful or fake?",
@@ -34,7 +34,7 @@ quiz_questions = [
             "Provides clear contact information and an About Us page",
             "Is professional with no grammar errors"
         ],
-        "answer": "2"
+        "answer": "Has misspelled URLs or domain names"
     },
     {
         "question": "What is the purpose of HTTPS in a website URL?",
@@ -43,7 +43,7 @@ quiz_questions = [
             "It allows you to access the internet without a browser",
             "It ensures that the data sent between your browser and the website is encrypted"
         ],
-        "answer": "3"
+        "answer": "It ensures that the data sent between your browser and the website is encrypted"
     },
     {
         "question": "What does the 'File path' in a URL do?",
@@ -53,12 +53,12 @@ quiz_questions = [
             "Specifies the secure connection to the website",
             "Tells the browser what page or resource to load within the website"
         ],
-        "answer": "4"
+        "answer": "Tells the browser what page or resource to load within the website"
     },
     {
         "question": "Which of these domain extensions is most likely for a non-profit organization?",
         "options": [".com", ".org", ".edu", ".co.za"],
-        "answer": "2"
+        "answer": ".org"
     },
     {
         "question": 'What should you do if you encounter a website with a lot of pop-ups, broken links, and "too good to be true" offers?',
@@ -68,12 +68,12 @@ quiz_questions = [
             "Share the link with friends",
             "Bookmark the site for future visits"
         ],
-        "answer": "2"
+        "answer": "Close the website immediately"
     },
     {
         "question": "Which part of the URL tells you which organization owns the website?",
         "options": ["Scheme", "Domain name", "Subdomain", "Anchor"],
-        "answer": "2"
+        "answer": "Domain name"
     },
     {
         "question": "What is the purpose of a URL?",
@@ -83,6 +83,6 @@ quiz_questions = [
             "To serve as the homepage for a website",
             "To provide a secure login for users"
         ],
-        "answer": "1"
+        "answer": "To identify the location of a webpage on the internet"
     },
 ]
