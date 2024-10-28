@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+        .quiz-container { max-width: 600px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        .question { font-size: 1.2em; margin-bottom: 15px; }
+        .options { list-style-type: none; padding: 0; }
+        .options li { margin-bottom: 10px; }
+        .options li label { cursor: pointer; }
+        .btn { display: inline-block; padding: 10px 15px; color: #fff; background-color: #669BBC; border: none; border-radius: 5px; cursor: pointer; }
+        .btn:hover { background-color: #003049; }
+        .result { font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <div id="quiz">
+        <div id="question" class="question"></div>
+        <ul id="options" class="options"></ul>
+        <button id="submit" class="btn">Submit Answer</button>
+        <div id="result" class="result"></div>
+    </div>
+</div>
+
+<script>
+    let websocket;
+    let currentQuestion = null;
+    let score = 0;
+    let totalQuestions = 0;
+    
+    // Connect to the WebSocket server
+    function connectWebSocket() {
+        websocket = new WebSocket('ws://localhost:1234');
+
+        websocket.onopen = function() {
+            console.log("Connected to the WebSocket server.");
+        };
+
+        websocket.onmessage = function(event) {
+            handleMessage(event.data);
+        };
+
+        websocket.onclose = function() {
+            console.log("Disconnected from the WebSocket server.");
+        };
+
+        websocket.onerror = function(error) {
+            console.error("WebSocket error: ", error);
+        };
+    }
+
+    // Handle incoming messages from the server
+    function handleMessage(data) {
+        const questionData = JSON.parse(data);
+
+        // Check if it's the score message
+        if (questionData.score !== undefined) {
+            document.getElementById('result').textContent = `Your score: ${questionData.score} out of ${questionData.total}`;
+            document.getElementById('question').style.display = 'none';
+            document.getElementById('options').style.display = 'none';
+            document.getElementById('submit').style.display = 'none';
+            return;
+        }
+
+        // Display the question and options
+        currentQuestion = questionData;
+        totalQuestions++;
+        displayQuestion();
+    }
+
+    // Display the current question and options
+    function displayQuestion() {
+        document.getElementById('question').textContent = currentQuestion.question;
+        const optionsElement = document.getElementById('options');
+        optionsElement.innerHTML = '';
+
+        currentQuestion.options.forEach((option, index) => {
+            const li = document.createElement('li');
+            li.innerHTML = `
+                <input type="radio" name="option" id="option${index}" value="${option}">
+                <label for="option${index}">${option}</label>
+            `;
+            optionsElement.appendChild(li);
+        });
+    }
+
+    // Handle answer submission
+    document.getElementById('submit').addEventListener('click', () => {
+        const selectedOption = document.querySelector('input[name="option"]:checked');
+        if (!selectedOption) {
+            alert('Please select an answer!');
+            return;
+        }
+
+        // Send the selected answer to the server
+        websocket.send(selectedOption.value);
+        // Clear the options for the next question
+        document.getElementById('options').innerHTML = '';
+    });
+
+    // Start the WebSocket connection
+    connectWebSocket();
+</script>
+
+</body>
+</html>
