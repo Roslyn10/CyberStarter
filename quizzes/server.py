@@ -5,7 +5,7 @@ import json
 
 # Import your quiz questions
 from Intro_internet import quiz_questions as intro_questions
-from Internet_safety import quiz_questions as safety_questions
+from Internet_safety import quiz_question as safety_questions
 
 # Store all quiz questions in a dictionary
 quizzes = {
