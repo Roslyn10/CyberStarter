@@ -36,7 +36,8 @@ async function handleSignup(event) {
         const result = await response.json();
         if (response.ok) {
             console.log('Registration successful:', result);
-            // Handle successful registration (e.g., redirect or show a message)
+            // Redirect to the main page after successful signup
+            window.location.href = 'index.html';
         } else {
             console.error('Registration failed:', result);
             // Handle registration error (e.g., show an error message)
@@ -69,7 +70,8 @@ async function handleLogin(event) {
             console.log('Login successful:', result);
             // Store the token if needed
             localStorage.setItem('token', result.token); // Example of storing the token
-            // Redirect or show a message
+            // Redirect to the main page after successful login
+            window.location.href = 'index.html';
         } else {
             console.error('Login failed:', result);
             // Handle login error (e.g., show an error message)
