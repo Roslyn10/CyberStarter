@@ -13,8 +13,8 @@ quiz_questions = [
     },
     {
         "question": "Look at this URL and label the different sections: https://www.example.com/shop/clothes/women?category=dresses&sort=price-asc#summer-collection",
-        "options": [],
-        "answer": ""
+        "options": ["Domain Name, Top-level Domain, Subdomain, File Path, Anchor, Parameter String, Scheme","Parameter String, Anchor, Scheme, Domain Name, File Path, Top-level Domain Subdomain", "Scheme, Domain Name, Top-level Domain, File Path, Parameter String, Anchor", "Anchor, Subdomain, Domain Name, Top-level Domain, Parameter String, Achor File Path"],
+        "answer": "Scheme, Domain Name, Top-level Domain, File Path, Parameter String, Anchor"
     },
     {
         "question": "What are the different types of phishing?",
