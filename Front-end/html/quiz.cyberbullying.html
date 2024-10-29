@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cyberbullying Quiz</title>
+    <link rel="stylesheet" href="../CSS/quiz.cyberbullying.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Cyberstarter</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Quiz-layout.html">Quiz</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="About-us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="quiz-container">
+        <div id="quiz">
+            <div id="question" class="question"></div>
+            <ul id="options" class="options"></ul>
+            <button id="submit" class="btn">Submit Answer</button>
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+
+    <script>
+        let websocket;
+        let currentQuestion = null;
+
+        function connectWebSocket() {
+            websocket = new WebSocket('ws://localhost:1234');
+
+            websocket.onopen = function() {
+                console.log("Connected to the WebSocket server.");
+                // Specify the module name here for "cyberbullying"
+                websocket.send(JSON.stringify({ module: "cyberbullying" }));
+            };
+
+            websocket.onmessage = function(event) {
+                handleMessage(event.data);
+            };
+        }
+
+        function handleMessage(data) {
+            const questionData = JSON.parse(data);
+
+            if (questionData.score !== undefined) {
+                document.getElementById('result').textContent = `Your score: ${questionData.score} out of ${questionData.total}`;
+                document.getElementById('question').style.display = 'none';
+                document.getElementById('options').style.display = 'none';
+                document.getElementById('submit').style.display = 'none';
+                return;
+            }
+
+            currentQuestion = questionData;
+            displayQuestion();
+        }
+
+        function displayQuestion() {
+            document.getElementById('question').textContent = currentQuestion.question;
+            const optionsElement = document.getElementById('options');
+            optionsElement.innerHTML = '';
+
+            currentQuestion.options.forEach((option, index) => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <input type="radio" name="option" id="option${index}" value="${option}">
+                    <label for="option${index}">${option}</label>
+                `;
+                optionsElement.appendChild(li);
+            });
+        }
+
+        document.getElementById('submit').addEventListener('click', () => {
+            const selectedOption = document.querySelector('input[name="option"]:checked');
+            if (!selectedOption) {
+                alert('Please select an answer!');
+                return;
+            }
+            websocket.send(selectedOption.value);
+            document.getElementById('options').innerHTML = '';
+        });
+
+        connectWebSocket();
+    </script>
+</body>
+</html>

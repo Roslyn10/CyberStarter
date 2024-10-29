@@ -8,6 +8,7 @@ from Intro_internet import quiz_questions as intro_quiz_questions
 from Internet_safety import quiz_questions as safety_quiz_questions
 from Websites import quiz_questions as websites_quiz_questions
 from Cyberbullying import quiz_questions as cyberbullying_quiz_questions
+from Email_basics import quiz_questions as email_quiz_questions
 
 # Dictionary to store all quiz modules
 quiz_modules = {
@@ -15,6 +16,7 @@ quiz_modules = {
     "safety": safety_quiz_questions,
     "websites": websites_quiz_questions,
     "cyberbullying": cyberbullying_quiz_questions,
+    "email": email_quiz_questions
 }
 
 async def quiz_server(websocket, path):
