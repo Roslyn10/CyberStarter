@@ -3,15 +3,15 @@ var signupForm = document.getElementById("signup");
 var btn = document.getElementById("btn");
 
 function signup() {
-    loginForm.style.left = "-400px";
-    signupForm.style.left = "50px";
-    btn.style.left = "110px";
+    loginForm.style.left = "-400px"; // Move login form off-screen
+    signupForm.style.left = "50px";  // Bring signup form into view
+    btn.style.left = "110px";         // Move button to the signup position
 }
 
 function login() {
-    loginForm.style.left = "50px";
-    signupForm.style.left = "450px";
-    btn.style.left = "0px";
+    loginForm.style.left = "50px";    // Bring login form into view
+    signupForm.style.left = "450px";  // Move signup form off-screen
+    btn.style.left = "0px";           // Move button to the login position
 }
 
 // Handle Sign Up
