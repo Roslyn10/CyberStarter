@@ -52,7 +52,7 @@ async function handleLogin(event) {
     event.preventDefault(); // Prevent the default form submission
     const formData = new FormData(loginForm);
     const userData = {
-        email: formData.get('username'), // Assuming 'username' field is used for email
+        email: formData.get('username'), 
         password: formData.get('password'),
     };
 
@@ -69,12 +69,12 @@ async function handleLogin(event) {
         if (response.ok) {
             console.log('Login successful:', result);
             // Store the token if needed
-            localStorage.setItem('token', result.token); // Example of storing the token
+            localStorage.setItem('token', result.token); // storing the token
             // Redirect to the main page after successful login
             window.location.href = 'index.html';
         } else {
             console.error('Login failed:', result);
-            // Handle login error (e.g., show an error message)
+            // Handle login error 
         }
     } catch (error) {
         console.error('Error during login:', error);
