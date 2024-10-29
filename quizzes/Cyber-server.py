@@ -4,7 +4,7 @@
 import asyncio
 import websockets
 import json
-from quiz_dictionary/Cyberbullying import quiz_question
+from Cyberbullying import quiz_question
 
 async def quiz_server(websocket, path):
     """The server that contains the quiz questions for the cyberbullying module
@@ -35,9 +35,9 @@ async def quiz_server(websocket, path):
 async def main():
     async with websockets.serve(quiz_server, "localhost", 1234):
         print("Server started at ws://localhost: 1234")
-        await asyncio.Futture() # Ensures that the server can be run forever
+        await asyncio.Future() # Ensures that the server can be run forever
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     try:
         asyncio.run(main())
     except KeyboardInterrupt:

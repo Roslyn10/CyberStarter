@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""The server that will contain the quiz questions for the website module"""
+"""The server that will contain the quiz questions for the Internet Safety module"""
 
 import asyncio
 import websockets
 import json
-from quiz_dictionary/websites import quiz_questions
+from Internet_safety import quiz_question
 
 async def quiz_server(websocket, path):
     """
@@ -35,5 +35,5 @@ async def main():
 if __name__ == "__main__":
     try:
         asyncio.run(main())
-    except KeyboardInterupt:
+    except KeyboardInterrupt:
         print("Server stopped by user")

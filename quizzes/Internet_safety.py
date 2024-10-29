@@ -19,7 +19,7 @@ quiz_question = [
     {
         "question": "Which action is good internet safety practice?",
         "options": ["Sharing your password with friends and family", "Clicking on links in an email from someone you don't know", "Using public Wi-Fi to check your bank account", "Logging out/Signing out of your account after using a public device"], 
-        "answer": "Logging out/Signing out of your account after using a public device"]
+        "answer": "Logging out/Signing out of your account after using a public device"
     },
     {
         "question": "What should you do if you receive an email from someone you don't know asking for personal information?",

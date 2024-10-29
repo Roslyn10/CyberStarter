@@ -29,7 +29,7 @@ quiz_question = [
     {
         "question": "What role do bystanders play in cyberbullying, and how can they help reduce its impact?",
         "options": ["Bystanders should avoid involvement at all costs", "Bystanders can empower the bully by ignoring the situation", "Bystanders can intervene by supporting the victim and reporting the bully", "Bystanders have no influence on cyberbullying"],
-        "answer": "Bystanders have no influence on cyberbullying"]
+        "answer": "Bystanders have no influence on cyberbullying"
     },
     {
         "question": "Which of the following is an indirect form of cyberbullying that can still cause significant emotional harm?",
