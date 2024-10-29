@@ -5,9 +5,9 @@ import asyncio
 import websockets
 import json
 from Intro_internet import quiz_questions as intro_quiz_questions
-from Internet_safety import quiz_questions as safety_quiz_questions
+from Internet_safety import quiz_question as safety_quiz_questions
 from Websites import quiz_questions as websites_quiz_questions
-from Cyberbullying import quiz_questions as cyberbullying_quiz_questions
+from Cyberbullying import quiz_question as cyberbullying_quiz_questions
 from Email_basics import quiz_questions as email_quiz_questions
 
 # Dictionary to store all quiz modules
