@@ -11,7 +11,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-    origin: 'http://localhost:3000', // Change this to your frontend's URL
+    origin: 'http://localhost:5000', // Change this to your frontend's URL
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     credentials: true, // Allow credentials (like cookies) to be sent
     optionsSuccessStatus: 200 // Some legacy browsers choke on 204
