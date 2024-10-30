@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/auth');
 
-dotenv.config()
+dotenv.config();
 connectDB();
 
 const app = express();
