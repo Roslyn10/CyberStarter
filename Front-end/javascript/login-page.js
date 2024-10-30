@@ -52,7 +52,7 @@ async function handleLogin(event) {
     event.preventDefault(); // Prevent the default form submission
     const formData = new FormData(loginForm);
     const userData = {
-        email: formData.get('username'), 
+        email: formData.get('email'), 
         password: formData.get('password'),
     };
 
