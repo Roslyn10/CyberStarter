@@ -7,7 +7,7 @@
 .hero {
     height: 100vh; /* Set height to full viewport height */
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Login-img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url();
     background-position: center;
     background-size: cover;
     position: relative; /* Changed to relative to position forms inside */
