@@ -4,29 +4,26 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/auth');
 
-// Load environment variables from .env file
+// Load environment variables
 dotenv.config();
 
-const app = express();
-
-// CORS configuration
-const corsOptions = {
-    origin: 'http://localhost:5000', // Change this to your frontend's URL
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    credentials: true, // Allow credentials (like cookies) to be sent
-    optionsSuccessStatus: 200 // Some legacy browsers choke on 204
-};
-
-// Enable CORS with the defined options
-app.use(cors(corsOptions));
-
-// Connect to MongoDB
+// Connect to the database
 connectDB();
 
-// Middleware to parse JSON
+// Initialize Express
+const app = express();
+
+// Use CORS with specific options
+app.use(cors({
+    origin: '*', // Allow all origins (for development purposes)
+    methods: ['GET', 'POST'], // Allow specific methods
+    credentials: true // Allow credentials (if needed)
+}));
+
+// Parse JSON requests
 app.use(express.json());
 
-// Define routes
+// Use authentication routes
 app.use('/api/auth', authRoutes);
 
 // Start the server
