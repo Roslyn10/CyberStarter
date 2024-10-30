@@ -4,6 +4,9 @@ const connectDB = require('./config/db');
 const authRoutes = require('./routes/auth');
 
 dotenv.config();
+
+console.log(process.env.MONGO_URI, process.env.JWT_SECRET);
+
 connectDB();
 
 const app = express();
