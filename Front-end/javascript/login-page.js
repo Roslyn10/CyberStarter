@@ -1,13 +1,16 @@
+// Get references to the form elements and button
 var loginForm = document.getElementById("login");
 var signupForm = document.getElementById("signup");
 var btn = document.getElementById("btn");
 
+// Function to switch to the signup form
 function signup() {
     loginForm.style.left = "-400px"; // Move login form off-screen
     signupForm.style.left = "50px";  // Bring signup form into view
     btn.style.left = "110px";         // Move button to the signup position
 }
 
+// Function to switch to the login form
 function login() {
     loginForm.style.left = "50px";    // Bring login form into view
     signupForm.style.left = "450px";  // Move signup form off-screen
@@ -25,6 +28,7 @@ async function handleSignup(event) {
     };
 
     try {
+        console.log('Sign Up Data:', userData); // Log the data being sent
         const response = await fetch('http://localhost:5000/api/auth/register', {
             method: 'POST',
             headers: {
@@ -34,6 +38,7 @@ async function handleSignup(event) {
         });
 
         const result = await response.json();
+        console.log('Sign Up Response:', result); // Log the response
         if (response.ok) {
             console.log('Registration successful:', result);
             // Redirect to the main page after successful signup
@@ -41,9 +46,11 @@ async function handleSignup(event) {
         } else {
             console.error('Registration failed:', result);
             // Handle registration error (e.g., show an error message)
+            alert(result.message || 'Registration failed');
         }
     } catch (error) {
         console.error('Error during registration:', error);
+        alert('An error occurred during registration.');
     }
 }
 
@@ -57,6 +64,7 @@ async function handleLogin(event) {
     };
 
     try {
+        console.log('Login Data:', userData); // Log the data being sent
         const response = await fetch('http://localhost:5000/api/auth/login', {
             method: 'POST',
             headers: {
@@ -66,6 +74,7 @@ async function handleLogin(event) {
         });
 
         const result = await response.json();
+        console.log('Login Response:', result); // Log the response
         if (response.ok) {
             console.log('Login successful:', result);
             // Store the token if needed
@@ -75,8 +84,10 @@ async function handleLogin(event) {
         } else {
             console.error('Login failed:', result);
             // Handle login error 
+            alert(result.message || 'Login failed');
         }
     } catch (error) {
         console.error('Error during login:', error);
+        alert('An error occurred during login.');
     }
 }
