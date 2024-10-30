@@ -120,18 +120,21 @@ nav ul li a {
 
 .coming-soon-banner {
     position: absolute;
-    top: -20px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #C1121F;
+    background-color: #780000;
     color: #fff;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     z-index: 10;
-    width: auto; 
+    letter-spacing: 1px;
 }
+
 
 footer {
     background: #780000;
