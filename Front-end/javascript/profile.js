@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const token = localStorage.getItem('token');
     if (!token) {
-        window.location.href = 'login.html'; // Redirect to login if not authenticated
+        window.location.href = 'login.html';
         return;
     }
 
@@ -20,14 +20,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         const userData = await response.json();
         document.getElementById('username').textContent = userData.username;
         document.getElementById('email').textContent = `Email: ${userData.email}`;
-        // Populate activity list as needed
     } catch (error) {
         console.error('Error fetching profile data:', error);
+        document.getElementById('error-message').style.display = 'block';
     }
 });
 
-// Logout functionality
 document.getElementById('logout-btn').addEventListener('click', () => {
     localStorage.removeItem('token');
-    window.location.href = 'login.html'; // Redirect to login page
+    window.location.href = 'login-page,html';
 });
