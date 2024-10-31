@@ -98,15 +98,6 @@ nav ul li a:hover {
     font-size: 1.2em;
 }
 
-.cta-button {
-    background-color: #C1121F;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2em;
-}
-
 .featured-modules {
     padding: 40px;
     text-align: center;
