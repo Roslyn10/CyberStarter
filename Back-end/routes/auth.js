@@ -6,7 +6,7 @@ const User = require('../models/User');
 router.post('/register', register);
 router.post('/login', login);
 
-router.get('/profile', authenticate, async (req, res) => {
+router.get('/profile', async (req, res) => {
     try {
         const user = await User.findById(req.user.id).select('-password'); // Exclude password
         if (!user) {
