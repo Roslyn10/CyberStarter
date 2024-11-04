@@ -119,27 +119,29 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-.lesson ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-top: 10px;
+.lesson-content {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
 }
 
-.lesson ul li {
-    margin-bottom: 10px;
+.lesson-content p {
+    flex: 1;
+    margin-right: 15px;
     font-size: 1em;
     line-height: 1.5;
 }
 
-/* General Image Styling */
-.lesson-item img {
-    width: 300px;
-    height: 200px;
+.lesson-content img {
+    width: 200px;
+    height: auto;
     object-fit: cover; 
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 10px 0; 
+}
+
+.lesson p:last-of-type {
+    margin-top: 20px;
 }
 
 /* Footer */
