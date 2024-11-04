@@ -54,29 +54,64 @@ nav ul li a:hover {
     color: #FDF0D5;
 }
 
-.auth-buttons a {
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 4px;
-    background-color: #780000;
-    transition: background-color 0.3s ease;
+.module-content {
+    padding: 40px;
+    background-color: #f4f4f4;
 }
 
-.auth-buttons a:hover {
-    background-color: #003049;
+.breadcrumbs {
+    margin-bottom: 20px;
 }
 
-/* Hero Section */
-.hero {
-    background: url('../images/index-banner.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 300px;
+.module-header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.lessons {
+    margin-top: 20px;
+}
+
+.lesson-item {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 0 20px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-content {
+    flex: 1;
+}
+
+.lesson-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.lesson-item p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.lesson-link {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.lesson-item img {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero h1 {
