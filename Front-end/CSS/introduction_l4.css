@@ -45,25 +45,8 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul li a {
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
 nav ul li a:hover {
     color: #FDF0D5;
-}
-
-.auth-buttons a {
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 4px;
-    background-color: #780000;
-    transition: background-color 0.3s ease;
-}
-
-.auth-buttons a:hover {
-    background-color: #003049;
 }
 
 /* Hero Section */
@@ -72,7 +55,6 @@ nav ul li a:hover {
     color: #fff;
     height: 300px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -83,10 +65,6 @@ nav ul li a:hover {
     font-size: 2.5em;
     margin-bottom: 10px;
     color: #FDF0D5;
-}
-
-.hero p {
-    font-size: 1.2em;
 }
 
 .cta-button {
@@ -134,17 +112,9 @@ nav ul li a:hover {
 
 .lesson-content img {
     width: 200px;
-    height: auto;
-    object-fit: cover; 
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.lesson p:last-of-type {
-    margin-top: 20px;
-}
-
-
 
 /* Footer */
 footer {
@@ -165,21 +135,8 @@ footer {
     gap: 20px;
 }
 
-.quick-links a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-    transition: color 0.3s ease;
-}
-
 .quick-links a:hover {
     color: #FDF0D5;
-}
-
-.contact-info p {
-    margin-bottom: 10px;
-    font-size: 0.9em;
 }
 
 /* Responsive Design */
