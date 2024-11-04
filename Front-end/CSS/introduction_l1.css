@@ -144,25 +144,6 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
-.lesson-content {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.lesson-content img {
-    align-self: flex-start; 
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-/* Additional responsive design for images */
-@media (max-width: 768px) {
-    .lesson-content img {
-        width: 100%;
-        height: auto;
-    }
-}
 
 
 /* Footer */
