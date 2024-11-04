@@ -131,6 +131,17 @@ nav ul li a:hover {
     line-height: 1.5;
 }
 
+/* General Image Styling */
+.lesson-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 10px 0; 
+}
+
 /* Footer */
 footer {
     background: #780000;
