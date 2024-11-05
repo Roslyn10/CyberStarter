@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction to the Internet: Lesson 1</title>
     <link rel="stylesheet" href="../CSS/internet_l1.css">
+    <style>
+        .lesson-content {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .lesson-content img {
+            width: 300px; /* Set a fixed width for all images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 15px; /* Add margin for spacing */
+        }
+
+        /* Alternate the image position */
+        .lesson-content:nth-child(odd) {
+            flex-direction: row; /* Text on left, image on right */
+        }
+
+        .lesson-content:nth-child(even) {
+            flex-direction: row-reverse; /* Image on left, text on right */
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -27,35 +51,85 @@
         <h2>Lesson 1: Internet Safety</h2>
         <p>Now that we understand the basics of the internet, it’s important to learn how to stay safe while using it. Here are some key tips:</p>
 
-        <h3>1. Protect Your Personal Information</h3>
-        <p>Don’t share sensitive details online like your name, address, phone number, or passwords. Avoid meeting strangers you only know online. It’s safer to communicate only with people you know personally, like friends and family. Be cautious about accepting files from unknown sources — they could contain viruses or harmful content.</p>
+        <div class="lesson-content">
+            <div class="text">
+                <h3>1. Protect Your Personal Information</h3>
+                <p>Don’t share sensitive details online like your name, address, phone number, or passwords. Avoid meeting strangers you only know online. It’s safer to communicate only with people you know personally, like friends and family. Be cautious about accepting files from unknown sources — they could contain viruses or harmful content.</p>
+            </div>
+            <img src="../images/internet-safety1.png" alt="Using strong passwords">
+        </div>
 
-        <h3>2. Use Privacy Safeguards</h3>
-        <p>Always turn on privacy settings on your accounts and devices to protect your personal information. Remember to log out when using shared or public devices, like school or library computers.</p>
+        <div class="lesson-content">
+            <div class="text">
+                <h3>2. Use Privacy Safeguards</h3>
+                <p>Always turn on privacy settings on your accounts and devices to protect your personal information. Remember to log out when using shared or public devices, like school or library computers.</p>
+            </div>
+            <img src="../images/Privacy-safeguards.png" alt="Social media security">
+        </div>
 
-        <h3>3. Be Smart When Browsing</h3>
-        <p>Avoid suspicious sites or explicit content. If something looks unsafe and suspicious, it probably is. Download apps carefully from trusted sources, as malware can be disguised as legitimate software.</p>
+        <div class="lesson-content">
+            <div class="text">
+                <h3>3. Be Smart When Browsing</h3>
+                <p>Avoid suspicious sites or explicit content. If something looks unsafe and suspicious, it probably is. Download apps carefully from trusted sources, as malware can be disguised as legitimate software.</p>
+            </div>
+            <img src="../images/internet-safety3.jpg" alt="Main image">
+        </div>
 
-        <h3>4. Secure Your Internet Connection</h3>
-        <p>Use secure networks, especially when accessing private information. When using public Wi-Fi, always be cautious, and consider using a VPN for extra safety.</p>
+        <div class="lesson-content">
+            <div class="text">
+                <h3>4. Secure Your Internet Connection</h3>
+                <p>Use secure networks, especially when accessing private information. When using public Wi-Fi, always be cautious, and consider using a VPN for extra safety.</p>
+            </div>
+            <img src="../images/Secure-internet-connections.jpeg" alt="Secure your internet connection">
+        </div>
 
-        <h3>5. Use Strong Passwords</h3>
-        <p>Create complex passwords with at least 16 characters, including numbers and special symbols. Avoid reusing the same password across multiple sites, and consider using a password manager to safely store them.</p>
+        <div class="lesson-content">
+            <div class="text">
+                <h3>5. Use Strong Passwords</h3>
+                <p>Create complex passwords with at least 16 characters, including numbers and special symbols. Avoid reusing the same password across multiple sites, and consider using a password manager to safely store them.</p>
+            </div>
+            <img src="../images/internet-safety1.png" alt="Use strong passwords">
+        </div>
 
-        <h3>6. Shop Online Safely</h3>
-        <p>Check for secure websites before entering payment details. Look for URLs that start with https instead of http.</p>
+        <div class="lesson-content">
+            <div class="text">
+                <h3>6. Shop Online Safely</h3>
+                <p>Check for secure websites before entering payment details. Look for URLs that start with https instead of http.</p>
+            </div>
+            <img src="../images/Shoping-online.jpeg" alt="Shop online safely">
+        </div>
 
-        <h3>7. Think Before You Post</h3>
-        <p>Be mindful of what you share online, as it can stay there permanently. Don’t post anything you wouldn’t want others to see, and avoid sharing sensitive pictures or documents publicly.</p>
+        <div class="lesson-content">
+            <div class="text">
+                <h3>7. Think Before You Post</h3>
+                <p>Be mindful of what you share online, as it can stay there permanently. Don’t post anything you wouldn’t want others to see, and avoid sharing sensitive pictures or documents publicly.</p>
+            </div>
+            <img src="../images/Think-before-posting.jpeg" alt="Think before posting">
+        </div>
 
-        <h3>8. Socialize with Care</h3>
-        <p>Don’t trust strangers online. Cybercriminals can create fake profiles to steal personal information, so be cautious with who you interact with.</p>
+        <div class="lesson-content">
+            <div class="text">
+                <h3>8. Socialize with Care</h3>
+                <p>Don’t trust strangers online. Cybercriminals can create fake profiles to steal personal information, so be cautious with who you interact with.</p>
+            </div>
+            <img src="../images/online-threats.jpeg" alt="Socializing online">
+        </div>
 
-        <h3>9. Stay Updated and Protected</h3>
-        <p>Keep antivirus software up to date to protect against new threats. Regularly back up your data to ensure access even if your information is breached.</p>
+        <div class="lesson-content">
+            <div class="text">
+                <h3>9. Stay Updated and Protected</h3>
+                <p>Keep antivirus software up to date to protect against new threats. Regularly back up your data to ensure access even if your information is breached.</p>
+            </div>
+            <img src="../images/updated-and-protected.png" alt="Stay updated and protected">
+        </div>
 
-        <h3>10. Be Cautious of Links</h3>
-        <p>Don’t click on suspicious links, as they may lead to malicious websites or install malware or spyware on your device.</p>
+        <div class="lesson-content">
+            <div class="text">
+                <h3>10. Be Cautious of Links</h3>
+                <p>Don’t click on suspicious links, as they may lead to malicious websites or install malware or spyware on your device.</p>
+            </div>
+            <img src="../images/Be-catious-of-links.png" alt="Caution with links">
+        </div>
 
         <h3>Common Online Threats</h3>
         <p>Be aware of potential online risks, including:</p>
