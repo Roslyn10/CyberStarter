@@ -101,29 +101,33 @@ nav ul li a:hover {
 /* Contact Form Section */
 .contact-form {
     max-width: 600px;
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 20px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-row {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     margin-bottom: 15px;
 }
 
 .form-row label {
-    width: 100px;
+    margin-bottom: 5px;
     font-weight: bold;
-    margin-right: 10px;
     color: #003049;
 }
 
 .form-row input, 
 .form-row textarea {
-    flex: 1;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -146,11 +150,13 @@ nav ul li a:hover {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    align-self: flex-start;
 }
 
 .submit-button:hover {
     background-color: #780000;
 }
+
 
 /* Footer */
 footer {
