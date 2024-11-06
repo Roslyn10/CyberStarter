@@ -54,54 +54,6 @@ nav ul li a:hover {
     color: #FDF0D5;
 }
 
-.auth-buttons a {
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 4px;
-    background-color: #780000;
-    transition: background-color 0.3s ease;
-}
-
-.auth-buttons a:hover {
-    background-color: #003049;
-}
-
-/* Hero Section */
-.hero {
-    background: url('../images/index-banner.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #FDF0D5;
-}
-
-.hero p {
-    font-size: 1.2em;
-}
-
-.cta-button {
-    background-color: #C1121F;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2em;
-}
-
-.cta-button:hover {
-    background-color: #780000;
-}
-
 /* Lesson Content */
 .lesson {
     background-color: #fff;
@@ -129,6 +81,32 @@ nav ul li a:hover {
     margin-bottom: 10px;
     font-size: 1em;
     line-height: 1.5;
+}
+
+/* Phishing Type Integration */
+.phishing-type {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.phishing-image {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.phishing-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.inline-image {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.caution-image {
+    width: 25%;
 }
 
 /* Footer */
@@ -169,21 +147,22 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .cta-button {
-        font-size: 1em;
-        padding: 10px 20px;
-    }
-
     header {
         flex-direction: column;
     }
 
-    .footer-content {
+    .lesson {
+        padding: 15px;
+    }
+
+    .phishing-image,
+    .inline-image {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .phishing-item {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 }
