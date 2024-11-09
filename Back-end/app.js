@@ -15,9 +15,9 @@ const app = express();
 
 // Use CORS with specific options
 app.use(cors({
-    origin: '*', // Allow all origins (for development purposes)
-    methods: ['GET', 'POST'], // Allow specific methods
-    credentials: true // Allow credentials (if needed)
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT'],
+    credentials: true
 }));
 
 // Parse JSON requests
