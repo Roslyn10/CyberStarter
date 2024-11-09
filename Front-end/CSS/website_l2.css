@@ -86,22 +86,23 @@ nav ul li a:hover {
 /* Image Styles */
 .image-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin: 20px 0;
 }
 
-.left-image {
+.image-container img {
     width: 40%;
     margin-right: 20px;
 }
 
+.image-container p {
+    flex: 1;
+}
+
+/* Responsive Image Layout */
 .right-image {
     width: 40%;
     margin-left: 20px;
-}
-
-.lesson p {
-    flex: 1;
 }
 
 /* Footer */
@@ -146,14 +147,22 @@ footer {
         flex-direction: column;
     }
 
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
+    .lesson {
+        padding: 15px;
     }
 
-    .left-image,
+    .image-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .image-container img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
     .right-image {
         width: 100%;
-        margin: 0 0 10px 0; 
+        margin: 0;
     }
 }
