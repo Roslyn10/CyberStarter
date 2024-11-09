@@ -71,37 +71,30 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-.lesson ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.lesson ul li {
+.lesson p {
+    font-size: 1.1em;
     margin-bottom: 10px;
-    font-size: 1em;
-    line-height: 1.5;
 }
 
-/* Image Styles */
-.image-container {
+.image-text {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
+.image-text img {
+    width: 45%;
+    height: auto;
+}
+
+/* Image alternate layout */
 .left-image {
-    width: 40%;
-    margin-right: 20px;
+    order: -1;
 }
 
 .right-image {
-    width: 40%; 
-    margin-left: 20px;
-}
-
-.lesson p {
-    flex: 1;
+    order: 1;
 }
 
 /* Footer */
