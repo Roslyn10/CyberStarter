@@ -29,14 +29,14 @@ This platform includes lesson modules that integrate visuals aligned with the te
 
 
 ## How it Works
-1. **Visit the website**: 
-2. **Log-in or sign-up**:
-3. **Choose a module to begin**:
-4. **Navigate to the lessons**:
-5. **Go through the lessons**:
-6. **Review additional resources (if needed)**:
-7. **Take the quiz**: 
-8. **Contact us for help (If you experence any trouble**
+1. **Visit the website**
+2. **Log-in or sign-up**
+3. **Choose a module to begin**
+4. **Navigate to the lessons**
+5. **Go through the lessons**
+6. **Review additional resources (if needed)**
+7. **Take the quiz**
+8. **Contact us for help (If you experence any trouble)**
 
 ## Usage
 [CyberStarter Landing page](CyberStarter.surge.sh)
