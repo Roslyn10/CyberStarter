@@ -3,6 +3,7 @@
 *”Bridging generations through technology”*
 
 ![Landing page](Front-end/images/Landing%20page%20.png)
+**Figure**: Landing page
 
 ## Description
 
