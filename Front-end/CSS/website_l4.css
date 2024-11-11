@@ -55,6 +55,21 @@ nav ul li a:hover {
     color: #FDF0D5;
 }
 
+/* Logout button styling to match navigation links */
+.logout-button {
+    background-color: #780000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 15px;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.logout-button:hover {
+    color: #FDF0D5;
+}
+
 /* Lesson Content */
 .lesson {
     max-width: 800px;

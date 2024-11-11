@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  const token = localStorage.getItem('token');  // Get the JWT token from localStorage
+  const token = localStorage.getItem('token');
   const errorMessage = document.getElementById('error-message');
   const usernameElement = document.getElementById('username');
   const emailElement = document.getElementById('email');
