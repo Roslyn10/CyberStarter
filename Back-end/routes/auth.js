@@ -15,7 +15,7 @@ router.get('/profile', auth, async (req, res) => {
         if (!user) {
             return res.status(404).json({ message: 'User not found' });
         }
-	// Sends the username and email
+        // Send the username and email
         res.json({ username: user.username, email: user.email });
     } catch (error) {
         res.status(500).json({ message: 'Server error' });
