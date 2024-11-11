@@ -102,6 +102,29 @@ nav ul li a:hover {
     background-color: #780000;
 }
 
+.lesson-content {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.lesson-content img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 15px;
+}
+
+/* Alternate the image position */
+.lesson-content:nth-child(odd) {
+    flex-direction: row; 
+}
+
+.lesson-content:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 /* Lesson Content */
 .lesson {
     background-color: #fff;
