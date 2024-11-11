@@ -13,17 +13,17 @@ This platform includes lesson modules that integrate visuals aligned with the te
 ## The Story 
 
 ## Features
-- [Login page](Front-end/images/Log-in%20page.png)
-- [Sign up page](Front-end/images/Sign-up%20page.png)
-- [Landing page](Front-end/images/Landing%20page%20.png)
-- [Home page](Front-end/images/Home%20page.png)
-- [Home page modules](Front-end/images/Home-page%20modules.png)
-- [Module lessons](Front-end/images/Introduction%20lesson.png)
-- [Kids courses](Front-end/images/Kids%20courses.png)
-- [Module Quizzes](Front-end/images/Module%20Quizzes.png)
-- [Quiz questions](Front-end/images/Quiz%20questions.png)
-- [Resources page](Front-end/images/Resources%20page.png)
-- [Contact page](Front-end/images/Contact%20page.png)
+- ![Login page](Front-end/images/Log-in%20page.png)
+- ![Sign up page](Front-end/images/Sign-up%20page.png)
+- ![Landing page](Front-end/images/Landing%20page%20.png)
+- ![Home page](Front-end/images/Home%20page.png)
+- ![Home page modules](Front-end/images/Home-page%20modules.png)
+- ![Module lessons](Front-end/images/Introduction%20lesson.png)
+- ![Kids courses](Front-end/images/Kids%20courses.png)
+- ![Module Quizzes](Front-end/images/Module%20Quizzes.png)
+- ![Quiz questions](Front-end/images/Quiz%20questions.png)
+- ![Resources page](Front-end/images/Resources%20page.png)
+- ![Contact page](Front-end/images/Contact%20page.png)
 
 
 
