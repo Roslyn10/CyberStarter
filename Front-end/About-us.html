@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="../CSS/About-us.css">
+    <link rel="stylesheet" href="CSS/About-us.css">
 </head>
 <body>
     <!-- Header -->
@@ -16,12 +16,22 @@
                 <li><a href="Courses.html">Courses</a></li>
                 <li><a href="Quiz-layout.html">Quiz</a></li>
                 <li><a href="Resources.html">Resources</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="About-us.html">About Us</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Profile.html">Profile</a></li>
+                <!-- Replace Profile link with a Logout button -->
+                <li><button id="logout-btn">Logout</button></li>
             </ul>
         </nav>
     </header>
+
+    <script>
+        // Logout functionality
+        document.getElementById('logout-btn').addEventListener('click', () => {
+            localStorage.removeItem('token');
+            window.location.href = 'index.html'; 
+        });
+    </script>
+</body>
 
         <!-- Hero Section -->
         <section class="hero">

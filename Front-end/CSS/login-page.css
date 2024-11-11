@@ -104,11 +104,11 @@ span {
 }
 
 #login {
-    left: 50px; /* Position of login form */
-    transition: left 0.5s ease; /* Add transition for smooth effect */
+    left: 50px;
+    transition: left 0.5s ease;
 }
 
 #signup {
-    left: 450px; /* Position of signup form */
-    transition: left 0.5s ease; /* Add transition for smooth effect */
+    left: 450px; 
+    transition: left 0.5s ease;
 }

@@ -1,20 +1,20 @@
-// Get references to the form elements and button
-var loginForm = document.getElementById("login");
-var signupForm = document.getElementById("signup");
-var btn = document.getElementById("btn");
+// Reference to the form elements and sliding button
+const loginForm = document.getElementById("login");
+const signupForm = document.getElementById("signup");
+const btn = document.getElementById("btn");
 
-// Function to switch to the signup form
+// Switch to signup form
 function signup() {
-    loginForm.style.left = "-400px"; // Move login form off-screen
-    signupForm.style.left = "50px";  // Bring signup form into view
-    btn.style.left = "110px";         // Move button to the signup position
+    loginForm.style.left = "-400px";
+    signupForm.style.left = "50px";
+    btn.style.left = "110px";
 }
 
-// Function to switch to the login form
+// Switch to login form
 function login() {
-    loginForm.style.left = "50px";    // Bring login form into view
-    signupForm.style.left = "450px";  // Move signup form off-screen
-    btn.style.left = "0px";           // Move button to the login position
+    loginForm.style.left = "50px";
+    signupForm.style.left = "450px";
+    btn.style.left = "0px";
 }
 
 // Handle Sign Up
@@ -42,7 +42,7 @@ async function handleSignup(event) {
         if (response.ok) {
             console.log('Registration successful:', result);
             // Redirect to the main page after successful signup
-            window.location.href = 'index.html';
+            window.location.href = 'home-page.html';
         } else {
             console.error('Registration failed:', result);
             // Handle registration error (e.g., show an error message)
@@ -80,7 +80,7 @@ async function handleLogin(event) {
             // Store the token if needed
             localStorage.setItem('token', result.token); // storing the token
             // Redirect to the main page after successful login
-            window.location.href = 'index.html';
+            window.location.href = 'home-page.html';
         } else {
             console.error('Login failed:', result);
             // Handle login error 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module Quizzes</title>
-    <link rel="stylesheet" href="../CSS/Quiz-layout.css">
+    <link rel="stylesheet" href="CSS/Quiz-layout.css">
 </head>
 <body>
     <!-- Header -->
@@ -18,10 +18,20 @@
                 <li><a href="Resources.html">Resources</a></li>
                 <li><a href="About-us.html">About Us</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Profile.html">Profile</a></li>
+                <!-- Replace Profile link with a Logout button -->
+                <li><button id="logout-btn">Logout</button></li>
             </ul>
         </nav>
     </header>
+
+    <script>
+        // Logout functionality
+        document.getElementById('logout-btn').addEventListener('click', () => {
+            localStorage.removeItem('token');
+            window.location.href = 'index.html'; 
+        });
+    </script>
+</body>
 
     <scetion class="hero">
         <h1>Stay Safe Online: Learn Internet Safety</h1>

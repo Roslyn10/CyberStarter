@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in/Sign up</title>
-    <link rel="stylesheet" href="../CSS/login-page.css">
+    <link rel="stylesheet" href="CSS/login-page.css">
 </head>
 <body>
     <div class="hero">
@@ -15,11 +15,10 @@
                 <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
             </div>
             <form id="login" class="input-group" onsubmit="handleLogin(event)">
-                <input type="text" name="email" class="input-field" placeholder="email" required>
+                <input type="text" name="email" class="input-field" placeholder="Email" required>
                 <input type="password" name="password" class="input-field" placeholder="Password" required>
                 <input type="checkbox" class="checkbox"><span>Remember Password</span>
                 <button type="submit" class="submit-btn">Log In</button>
-                <a href="index.html"></a>
             </form>
             <form id="signup" class="input-group" onsubmit="handleSignup(event)">
                 <input type="text" name="username" class="input-field" placeholder="User name" required>
@@ -30,6 +29,6 @@
             </form>
         </div>
     </div>
-    <script src="../javascript/login-page.js"></script>
+    <script src="javascript/login-page.js"></script>
 </body>
 </html>

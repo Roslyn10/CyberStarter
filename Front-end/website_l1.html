@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Websites & URLs: Lesson 1</title>
-    <link rel="stylesheet" href="../CSS/website_l1.css">
+    <link rel="stylesheet" href="CSS/website_l1.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">Cyberstarter</div>
+        <div class="logo">CyberStarter</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,10 +18,20 @@
                 <li><a href="Resources.html">Resources</a></li>
                 <li><a href="About-us.html">About Us</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Profile.html">Profile</a></li>
+                <!-- Replace Profile link with a Logout button -->
+                <li><button id="logout-btn">Logout</button></li>
             </ul>
         </nav>
     </header>
+
+    <script>
+        // Logout functionality
+        document.getElementById('logout-btn').addEventListener('click', () => {
+            localStorage.removeItem('token');
+            window.location.href = 'index.html'; 
+        });
+    </script>
+</body>
 
     <div class="lesson">
         <h2>Lesson 1: Understanding Websites</h2>
