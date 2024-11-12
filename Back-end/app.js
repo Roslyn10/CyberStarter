@@ -13,12 +13,12 @@ connectDB();
 // Initialize Express
 const app = express();
 
-console.log('*',
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: 'process.env.FRONTEND_URL',
     methods: ['GET', 'POST', 'PUT'],
-    credentials: true // Allows cookies to be sent with requests
+    credentials: true
 }));
+
 
 
 // Parse JSON requests
