@@ -37,7 +37,7 @@ CyberStarter is also my portfolio project for the ALX program, showcasing the sk
 
 
 ## How it Works
-1. **Visit the website**: [CyberStarter langing page](https://cyberstarter.surge.sh/)
+1. **Visit the website**: [CyberStarter landing page](https://cyberstarter.surge.sh/)
 2. **Log-in or sign-up**: Create an account or log in to access the modules.
 3. **Choose a module**: Select a module to begin learning.
 4. **Navigate to the lessons**: Explore lessons within the module.
@@ -70,7 +70,7 @@ To use CyberStarter locally, you'll need to clone the repository and start both 
    mongo
    ```
 
-Note: Make sure MongDB is installed on your system. 
+Note: Make sure MongoDB is installed on your system. 
 
 5. Start the App server:
 In a new terminal window (keep the MongoDB terminal open), navigate to the Back-end directory and start the app server:
@@ -94,14 +94,20 @@ To access the quizzes, open a new terminal and start the quiz server:
 
 Note: Make sure Python 3 is installed on your system.
 
+7. Open the website with the link: [CyberStarter langing page](https://cyberstarter.surge.sh/) and let the learning begin
+
+8. **Or open the website locally**: Make sure the following localhost URLs are available:
+   - http://127.0.0.1:5500
+   - http://localhost:3000
+   - http://localhost:5000
 
 ## License
 
-This project does not currently have a license.
+This project is not licensed for open-source use.
 
 ## Summary
 
-Without a license, this project is not open source. All rights are reserved by the author. You dont have permission to use, modify, or distribute the code without explicit permission.
+Without a license, this project is not open source. All rights are reserved by the author. You don't have permission to use, modify, or distribute the code without explicit permission.
 
 ## Contributor
 
