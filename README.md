@@ -38,44 +38,45 @@ CyberStarter is also my portfolio project for the ALX program, showcasing the sk
 
 
 ## How it Works
-1. **Visit the website**: [Laning page](CyberStarter.surge.sh)
-2. **Log-in or sign-up**
-3. **Choose a module to begin**
-4. **Navigate to the lessons**
-5. **Go through the lessons**
-6. **Review additional resources (if needed)**
-7. **Take the quiz**
-8. **Contact us for help (If you experence any trouble)**
+1. **Visit the website**: [Landing page](CyberStarter.surge.sh)
+2. **Log-in or sign-up**: Create an account or log in to access the modules.
+3. **Choose a module**: Select a module to begin learning.
+4. **Navigate to the lessons**: Explore lessons within the module.
+5. **Go through the lessons**: Read through the lessons at your own pace.
+6. **Review additional resources**: If you need more information, check out additional resources.
+7. **Take the quiz**: Test your knowledge with a quiz at the end of the lesson.
+8. **Contact us for help**: If you experience any issues, don't hesitate to contact us via the contact form.
+
 
 ## Usage
 [CyberStarter Landing page](CyberStarter.surge.sh)
 To use CyberStarter locally, you'll need to clone the repository and start both the app server and the database. Follow the instructions below to set up the project
 
 1. Clone the Repository:
-git clone https://github.com/Roslyn10/CyberStarter.git
+```git clone https://github.com/Roslyn10/CyberStarter.git
 
 2. Navigate to the project directory:
-cd CyberStarter
+```cd CyberStarter
 
 3. Navigate into the Back-end directory:
-cd Back-end
+```cd Back-end
 
 4. Start the MongoDB Database:
-mongo
+```mongo
 
 Note: Make sure MongDB is installed on your system. 
 
 5. Start the App server:
 In a new terminal window (keep the MongoDB terminal open), navigate to the Back-end directory and start the app server:
-cd CyberStarter/Back-end
-node app.js
+```cd CyberStarter/Back-end
+```node app.js
 
 With the server running, you can now open the website in your browser and explore the CyberStarter platform.
 
 6. Start the Quiz Server:
 To access the quizzes, open a new terminal and start the quiz server:
-cd CyberStarter/quizzes
-python3 quiz-server.py
+```cd CyberStarter/quizzes
+```python3 quiz-server.py
 
 Note: Make sure Python 3 is installed on your system.
 
