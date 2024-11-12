@@ -1,5 +1,6 @@
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs');
 
 // Function to generate JWT
 const generateToken = (id) => {
@@ -16,13 +17,19 @@ exports.register = async (req, res) => {
             return res.status(400).json({ message: 'User already exists' });
         }
 
-        user = new User({ username, email, password });
+        // Hash the password
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(password, salt);
+
+        // Save user with hashed password
+        user = new User({ username, email, password: hashedPassword });
         await user.save();
 
-        const token = generateToken(user._id);  // Generate the token here
-        res.json({ token });
+        const token = generateToken(user._id);
+        res.status(201).json({ token, username: user.username, email: user.email });
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        console.error('Error during registration:', error); // Log the error
+        res.status(500).json({ message: 'Server error during signup' });
     }
 };
 
@@ -33,7 +40,7 @@ exports.login = async (req, res) => {
     try {
         const user = await User.findOne({ email });
         if (!user) {
-            return res.status(401).json({ message: 'Invalid credentials' }); // Ensure the user is found
+            return res.status(401).json({ message: 'Invalid credentials' });
         }
 
         // Check if the password matches
@@ -42,9 +49,10 @@ exports.login = async (req, res) => {
             return res.status(401).json({ message: 'Invalid credentials' });
         }
 
-        const token = generateToken(user._id);  // Generate the token here
-        res.json({ token });
+        const token = generateToken(user._id);
+        res.json({ token, username: user.username, email: user.email });
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        console.error('Error during login:', error); // Log the error
+        res.status(500).json({ message: 'Server error during login' });
     }
 };
