@@ -37,7 +37,7 @@ CyberStarter is also my portfolio project for the ALX program, showcasing the sk
 
 
 ## How it Works
-1. **Visit the website**: [Landing page](CyberStarter.surge.sh)
+1. **Visit the website**: [CyberStarter langing page](https://cyberstarter.surge.sh/)
 2. **Log-in or sign-up**: Create an account or log in to access the modules.
 3. **Choose a module**: Select a module to begin learning.
 4. **Navigate to the lessons**: Explore lessons within the module.
@@ -48,7 +48,6 @@ CyberStarter is also my portfolio project for the ALX program, showcasing the sk
 
 
 ## Usage
-[CyberStarter Landing page](CyberStarter.surge.sh)
 To use CyberStarter locally, you'll need to clone the repository and start both the app server and the database. Follow the instructions below to set up the project
 
 1. Clone the Repository:

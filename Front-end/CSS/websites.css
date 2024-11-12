@@ -187,6 +187,37 @@ nav ul li a:hover {
     display: block;
 }
 
+/* Lesson Navigation Buttons */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.lesson-navigation a {
+    display: inline-block;
+    background-color: #669BBC;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    width: 45%;
+}
+
+.prev-lesson:hover {
+    background-color: #003049;
+    color: #FDF0D5;
+}
+
+.next-lesson:hover {
+    background-color: #003049;
+    color: #FDF0D5;
+}
+
 footer {
     background: #780000;
     color: #fff;

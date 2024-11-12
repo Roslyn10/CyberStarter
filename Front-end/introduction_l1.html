@@ -23,44 +23,51 @@
         </nav>
     </header>
 
+    <!-- JavaScript for Logout -->
     <script>
-        // Logout functionality
         document.getElementById('logout-btn').addEventListener('click', () => {
             localStorage.removeItem('token');
             window.location.href = 'index.html'; 
         });
     </script>
-</body>
+
+    <!-- Lesson Content -->
     <div class="lesson">
         <h2>Lesson 1: What is the Internet?</h2>
         <div class="lesson-content">
             <p>The internet is a global network connecting billions of computers worldwide. It enables communication and access to information across the world.</p>
-            <img src="../images/What-is-the-internet.jpg" alt="What is the internet">
+            <img src="images/What-is-the-internet.jpg" alt="What is the internet">
         </div>
         <div class="lesson-content">
-            <img src="../images/What-is-the-internet-3.png" alt="What is the internet2">
+            <img src="images/What-is-the-internet-3.png" alt="What is the internet2">
             <p>The network is made up of computers connected by cables, even when using wireless connections.</p>
         </div>
         <div class="lesson-content">
             <p>No one controls the internet; it’s an open-source network maintained by contributors.</p>
-            <img src="../images/Who-owns-the-internet.jpg" alt="What is the internet3">
+            <img src="images/Who-owns-the-internet.jpg" alt="What is the internet3">
         </div>
         <p>The internet and the World Wide Web (WWW) are not the same thing. The internet is the network, while the WWW is a collection of web pages.</p>
     </div>
     
-
-   <!-- Footer -->
-   <footer>
-    <div class="footer-content">
-        <div class="quick-links">
-            <a href="Privacy.html">Privacy Policy</a>
-            <a href="Terms.html">Terms of Use</a>
-        </div>
-        <div class="contact-info">
-            <p>Email: cyberstarter93@gmail.com</p>
-            <p>2024. CyberStarter. All rights reserved.</p>
-        </div>
+    <!-- Navigation Buttons-->
+    <div class="lesson-navigation">
+        <a href="home-page.html" class="next-lesson">Home Page</a>
+        <a href="introduction_l2.html" class="next-lesson">Next Lesson</a>
     </div>
-</footer>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <a href="Privacy.html">Privacy Policy</a>
+                <a href="Terms.html">Terms of Use</a>
+            </div>
+            <div class="contact-info">
+                <p>Email: cyberstarter93@gmail.com</p>
+                <p>2024. CyberStarter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
