@@ -7,7 +7,7 @@
 
 ## Description
 
-CyberStarter is an online education forum that aims to teach users, especially the elderly and students, about safety on the internet and necessary skills. The user-friendly layout and interactive lesson modules will give users confidence in their ability to navigate the online world safely. Modules on cyberbullying awareness and safe internet browsing are presented with visuals integrated into a cohesive text-based learning experience.
+CyberStarter is an online education forum that aims to teach users, especially the elderly and less fortunate students who don't have constant access to the internet, about safety on the internet and necessary skills. The user-friendly layout and interactive lesson modules will give users confidence in their ability to navigate the online world safely. Modules on cyberbullying awareness and safe internet browsing are presented with visuals integrated into a cohesive text-based learning experience.
 
 This platform includes lesson modules that integrate visuals aligned with the text and quizzes to reinforce learning. Other authenticating features include registration and login, offering CyberStarter a personalized experience. Contact form use in case of direct support is also provided by CyberStarter.
 
