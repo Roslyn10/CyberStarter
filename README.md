@@ -96,7 +96,7 @@ Note: Make sure Python 3 is installed on your system.
 
 7. Open the website with the link: [CyberStarter langing page](https://cyberstarter.surge.sh/) and let the learning begin
 
-8. **Or open the website locally**: Make sure the following localhost URLs are available:
+8. **Or open the website locally**: Make sure one of the following localhost URLs are available:
    - http://127.0.0.1:5500
    - http://localhost:3000
    - http://localhost:5000
