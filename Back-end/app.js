@@ -15,7 +15,7 @@ const app = express();
 
 // Use CORS with specific options
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: '*',
 
     methods: ['GET', 'POST', 'PUT'],
     credentials: true
