@@ -11,7 +11,16 @@ CyberStarter is an online education forum that aims to teach users, especially t
 
 This platform includes lesson modules that integrate visuals aligned with the text and quizzes to reinforce learning. Other authenticating features include registration and login, offering CyberStarter a personalized experience. Contact form use in case of direct support is also provided by CyberStarter.
 
-## The Story 
+## The Story
+
+The CyberStarter project was inspired by my desire to bridge the digital divide between generations. Growing up in a world where technology constantly changes, I realized staying in touch with family and friends online was essential. The internet can feel intimidating to many older adults. I wanted to create a platform that teaches them how to connect confidently and safely. 
+
+Also, I noticed that many students with limited internet experience have difficulty navigating the digital world safely and responsibly. The goal of CyberStarter is to equip these students with knowledge and skills that will enable them to use the internet responsibly and effectively in the future.
+
+My goal is to continue developing CyberStarter by adding courses tailored for kids in the future. Educating the next generation to understand and respect online spaces from an early age will prepare them for a life integrated with the internet. Teaching kids about internet safety early on will help them grow into informed, responsible users in an increasingly connected world.
+
+CyberStarter is also my portfolio project for the ALX program, showcasing the skills and knowledge I’ve developed. Over the past year, I have learned so much, and I wanted to apply those skills to something impactful. CyberStarter represents my commitment to making the Internet a safer, more accessible place for everyone. I wanted this project to be more than a demonstration. I wanted it to be meaningful and have a positive impact.  
+??? from here until ???END lines may have been inserted/deleted
 
 ## Features
 - [Login page](Front-end/images/Log-in%20page.png)
@@ -29,7 +38,7 @@ This platform includes lesson modules that integrate visuals aligned with the te
 
 
 ## How it Works
-1. **Visit the website**
+1. **Visit the website**: [Laning page](CyberStarter.surge.sh)
 2. **Log-in or sign-up**
 3. **Choose a module to begin**
 4. **Navigate to the lessons**
@@ -40,6 +49,35 @@ This platform includes lesson modules that integrate visuals aligned with the te
 
 ## Usage
 [CyberStarter Landing page](CyberStarter.surge.sh)
+To use CyberStarter locally, you'll need to clone the repository and start both the app server and the database. Follow the instructions below to set up the project
+
+1. Clone the Repository:
+git clone https://github.com/Roslyn10/CyberStarter.git
+
+2. Navigate to the project directory:
+cd CyberStarter
+
+3. Navigate into the Back-end directory:
+cd Back-end
+
+4. Start the MongoDB Database:
+mongo
+
+Note: Make sure MongDB is installed on your system. 
+
+5. Start the App server:
+In a new terminal window (keep the MongoDB terminal open), navigate to the Back-end directory and start the app server:
+cd CyberStarter/Back-end
+node app.js
+
+With the server running, you can now open the website in your browser and explore the CyberStarter platform.
+
+6. Start the Quiz Server:
+To access the quizzes, open a new terminal and start the quiz server:
+cd CyberStarter/quizzes
+python3 quiz-server.py
+
+Note: Make sure Python 3 is installed on your system.
 
 
 ## License
@@ -55,3 +93,4 @@ Without a license, this project is not open source. All rights are reserved by t
 - **Name**: Roslyn Lewis
 - **Email**: roslynclewis1004@gmail.com
 - **Twitter**:[@Rossi_Kangaroo](https://twitter.com/Rossi_Kangaroo)
+???END
