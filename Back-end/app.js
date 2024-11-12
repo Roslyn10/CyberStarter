@@ -13,7 +13,7 @@ connectDB();
 // Initialize Express
 const app = express();
 
-console.log('Frontend URL:', process.env.FRONTEND_URL);
+console.log('*',
 app.use(cors({
     origin: process.env.FRONTEND_URL,
     methods: ['GET', 'POST', 'PUT'],
