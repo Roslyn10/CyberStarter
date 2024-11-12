@@ -20,7 +20,6 @@ Also, I noticed that many students with limited internet experience have difficu
 My goal is to continue developing CyberStarter by adding courses tailored for kids in the future. Educating the next generation to understand and respect online spaces from an early age will prepare them for a life integrated with the internet. Teaching kids about internet safety early on will help them grow into informed, responsible users in an increasingly connected world.
 
 CyberStarter is also my portfolio project for the ALX program, showcasing the skills and knowledge I’ve developed. Over the past year, I have learned so much, and I wanted to apply those skills to something impactful. CyberStarter represents my commitment to making the Internet a safer, more accessible place for everyone. I wanted this project to be more than a demonstration. I wanted it to be meaningful and have a positive impact.  
-??? from here until ???END lines may have been inserted/deleted
 
 ## Features
 - [Login page](Front-end/images/Log-in%20page.png)
