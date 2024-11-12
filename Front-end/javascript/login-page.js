@@ -35,7 +35,7 @@ async function handleSignup(event) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(userData),
-            credentials: 'include',
+            // credentials: 'include',
         });
 
         const result = await response.json();
@@ -46,7 +46,7 @@ async function handleSignup(event) {
             window.location.href = 'home-page.html';
         } else {
             console.error('Registration failed:', result);
-            // Handle registration error (e.g., show an error message)
+            // Handle registration error 
             alert(result.message || 'Registration failed');
         }
     } catch (error) {

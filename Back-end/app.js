@@ -16,7 +16,6 @@ const app = express();
 // Use CORS with specific options
 app.use(cors({
     origin: '*',
-
     methods: ['GET', 'POST', 'PUT'],
     credentials: true
 }));
