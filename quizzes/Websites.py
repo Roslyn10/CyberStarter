@@ -9,11 +9,11 @@ quiz_questions = [
             "https://www.example.com/shop/clothes/women?category=dresses&sort=price-asc#summer-collection",
             "http://www.freeiphonedeals.com/win?prize=iphone&entry=1234"
         ],
-        "answer":  "https://www.example.com/shop/clothes/women?category=dresses&sort=price-asc#summer-collection"
+        "answer": "https://www.example.com/shop/clothes/women?category=dresses&sort=price-asc#summer-collection"
     },
     {
         "question": "Look at this URL and label the different sections: https://www.example.com/shop/clothes/women?category=dresses&sort=price-asc#summer-collection",
-        "options": ["Domain Name, Top-level Domain, Subdomain, File Path, Anchor, Parameter String, Scheme","Parameter String, Anchor, Scheme, Domain Name, File Path, Top-level Domain Subdomain", "Scheme, Domain Name, Top-level Domain, File Path, Parameter String, Anchor", "Anchor, Subdomain, Domain Name, Top-level Domain, Parameter String, Achor File Path"],
+        "options": ["Domain Name, Top-level Domain, Subdomain, File Path, Anchor, Parameter String, Scheme", "Parameter String, Anchor, Scheme, Domain Name, File Path, Top-level Domain Subdomain", "Scheme, Domain Name, Top-level Domain, File Path, Parameter String, Anchor", "Anchor, Subdomain, Domain Name, Top-level Domain, Parameter String, Achor File Path"],
         "answer": "Scheme, Domain Name, Top-level Domain, File Path, Parameter String, Anchor"
     },
     {

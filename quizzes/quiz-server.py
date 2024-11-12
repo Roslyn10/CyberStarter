@@ -19,6 +19,7 @@ quiz_modules = {
     "email": email_quiz_questions
 }
 
+
 async def quiz_server(websocket, path):
     """
     The main server function for the quiz modules.
@@ -56,6 +57,8 @@ async def quiz_server(websocket, path):
     await websocket.close()
 
 # Initialize and run the server
+
+
 async def main():
     async with websockets.serve(quiz_server, "localhost", 1234):
         print("Server started at ws://localhost:1234")
