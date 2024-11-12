@@ -35,7 +35,7 @@ async function handleSignup(event) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(userData),
-            //credentials: 'include',
+            credentials: 'include',
         });
 
         const result = await response.json();

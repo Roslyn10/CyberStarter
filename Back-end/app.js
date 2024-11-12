@@ -14,8 +14,15 @@ connectDB();
 const app = express();
 
 // Use CORS with specific options
+
+const allowedOrigins = [
+    'https://cyberstarter.surge.sh',
+    'http://127.0.0.1:5500',
+    'http://localhost:3000'
+    'http://localhost:5000'
+];
 app.use(cors({
-    origin: '*',
+    origin: 'https://cyberstarter.surge.sh','http://localhost:3000'
     methods: ['GET', 'POST', 'PUT'],
     credentials: true
 }));
