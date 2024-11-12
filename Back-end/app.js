@@ -13,12 +13,13 @@ connectDB();
 // Initialize Express
 const app = express();
 
-// Use CORS with specific options
+console.log('Frontend URL:', process.env.FRONTEND_URL);
 app.use(cors({
     origin: process.env.FRONTEND_URL,
     methods: ['GET', 'POST', 'PUT'],
     credentials: true // Allows cookies to be sent with requests
 }));
+
 
 // Parse JSON requests
 app.use(express.json());
