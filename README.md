@@ -68,15 +68,15 @@ Note: Make sure MongDB is installed on your system.
 
 5. Start the App server:
 In a new terminal window (keep the MongoDB terminal open), navigate to the Back-end directory and start the app server:
-```cd CyberStarter/Back-end
-node app.js```
+```cd CyberStarter/Back-end```
+```node app.js```
 
 With the server running, you can now open the website in your browser and explore the CyberStarter platform.
 
 6. Start the Quiz Server:
 To access the quizzes, open a new terminal and start the quiz server:
-```cd CyberStarter/quizzes
-python3 quiz-server.py```
+```cd CyberStarter/quizzes```
+```python3 quiz-server.py```
 
 Note: Make sure Python 3 is installed on your system.
 
