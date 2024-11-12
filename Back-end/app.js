@@ -22,7 +22,7 @@ const allowedOrigins = [
     'http://localhost:5000'
 ];
 app.use(cors({
-    origin: 'https://cyberstarter.surge.sh','http://localhost:3000'
+    origin: 'https://cyberstarter.surge.sh','http://localhost:3000',
     methods: ['GET', 'POST', 'PUT'],
     credentials: true
 }));
